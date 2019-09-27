@@ -1,0 +1,10 @@
+{%extends 'base.html'%}
+{%block content%}
+<h1>Languages</h1>
+
+{% for l, c in langs.items() %}
+    <div>
+        <strong>{{l}}</strong> is enjoyed by {{",".join(c)}}
+    </div>
+{%endfor%}
+{%endblock%}

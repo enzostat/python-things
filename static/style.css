@@ -1,0 +1,77 @@
+h1 {
+    color: mediumspringgreen;
+    font-size: 48px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav {
+    background-color: #333;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: mediumspringgreen;
+    font-size: 24px;
+}
+
+nav a:hover {
+    color: red;
+}
+
+.logo{
+    max-height: 20px;
+    width: auto;
+    float: left;
+}
+
+.banner {
+    max-height: 300px;
+    width: 100%
+
+}
+
+.form-input {
+    width: 100%;
+    margin-bottom: 10px;
+    border: 2px solid grey;
+}
+
+form label {
+    float: left;
+}
+
+.container {
+    margin: 0 15px;
+    padding: 0 15px;
+    background-color: #eee
+}
+
+.button {
+    /* padding-bottom: 10px; */
+    margin-bottom: 10px;
+    color: mediumspringgreen;
+    background-color: black;
+    border-radius: 3px;
+}
+
+a {
+    text-decoration: none;
+    color: mediumspringgreen;
+    font-size: 24px;
+}

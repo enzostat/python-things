@@ -1,0 +1,42 @@
+{%extends 'base.html'%}
+{%block content%}
+<h1>{{ characters|length }} Characters</h1>
+<div>
+   {% if characters|length > 0 %} 
+   {% for c in characters %}
+   <div>
+        <a href="/characters/{{c._id}}">{{c.name}}</a>
+   </div>
+   {% endfor %}
+    {% else %}
+    <p>Character List Coming Soon!</p>
+   {%endif%}
+</div>
+<hr>
+<h2>Add A New Character</h2>
+
+<form method="POST" action="/characters/">
+    <div>
+        <label for="name">Name:</label>
+        <input id="name" name="name" class="form-input">
+    </div>
+    <div>
+        <label for="image">Image:</label>
+        <input type="url" id="image" name="image" class="form-input">
+    </div>
+    <div>
+        <label for="birthday">Birthday:</label>
+        <input type="date" id="birthday" name="birthday" class="form-input">
+    </div>
+    <div>
+        <label for="languages">Favorite Languages:</label>
+        <input id="languages" name="languages" class="form-input">
+    </div>
+    <div>
+        <label for="bio">Bio:</label>
+        <textarea id="bio" name="bio" class="form-input"></textarea>
+    </div>
+    <input type="submit" class="button">
+</form>
+
+{%endblock%}
